@@ -2,6 +2,10 @@ const passport = require('passport');
 
 // because we did not create the app object in this
 module.exports = (app) => {
+  app.get('/', (req, res) => {
+    res.send({ hello: 'goodbye' });
+  });
+
   app.get(
     '/auth/google',
     passport.authenticate('google', {
