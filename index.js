@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-const authRoutes = require('./routes/authRoutes');
+// const authRoutes = require('./routes/authRoutes');
 const keys = require('./config/keys');
 require('./models/Users');
 require('./services/passport'); // this must come after models/Users because the file uses models/users
